@@ -25,7 +25,9 @@ python smart_glass_demo.py path/to/photo.jpg --distance-cm 80
 python smart_glass_demo.py path/to/photo.jpg --distance-cm 35 --speak
 ```
 
-The distance is typed in manually. No live sensor, camera, wearable device, navigation system, or obstacle detection is connected. --speak uses the operating system's available speech engine and may need local audio support.
+Replace `path/to/photo.jpg` with a path to your own local image containing printed text; the repository does not include a sample image.
+
+The distance is typed in manually. No live sensor, camera, wearable device, navigation system, or obstacle detection is connected. `--speak` uses the operating system's available speech engine and may need local audio support.
 
 ## Limitations and responsible use
 
