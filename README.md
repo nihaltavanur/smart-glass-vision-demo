@@ -4,6 +4,19 @@
 
 This command-line program extracts printed text from an image with OpenCV and Tesseract OCR. It can also read a distance value entered by the user to simulate an ultrasonic sensor. Optional text-to-speech reads the guidance aloud.
 
+## Demo flow
+
+```mermaid
+flowchart LR
+    image["Local image with printed text"] --> prep["OpenCV grayscale and thresholding"]
+    prep --> ocr["Tesseract OCR"]
+    ocr --> text["Recognized text"]
+    distance["Optional manual distance input"] --> guide["Threshold-based demo guidance"]
+    text --> console["Console output"]
+    guide --> console
+    console --> speech["Optional local speech with --speak"]
+```
+
 ## Requirements
 
 - Python 3.10 or newer
